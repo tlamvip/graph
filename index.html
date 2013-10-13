@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<title>Graph</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="fruitCtrl">
+             
+    <div class="graph_container">
+        <div class="bar" ng-repeat="item in items" style=" height : {{item.value * 2}}px; margin-top : {{200 - item.value * 2}}px; ">
+			{{item.value}}%
+        </div>      
+    </div>          
+
+    <div ng-controller="itemTableCtrl">
+		<table>
+			<tr ng-repeat="item in items">
+				<td>
+					<input ng-model="item.title">
+				</td> 
+				<td>
+					<input ng-model="item.value" ng-change="maxValue(item)"> %
+				</td>
+			</tr>        
+		</table> 
+        <button ng-click="add()">Add new</button>
+    </div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="app.js"></script>
+	
+</body>
+</html>

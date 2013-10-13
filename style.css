@@ -1,0 +1,13 @@
+.graph_container{
+	height: 200px;
+	padding: 5px;
+}
+.bar{
+	background: #00BCF2;    
+	float: left;	
+	color: #fff;
+	padding: 2px;
+	margin-right: 5px;      
+	text-align: center;
+	width: 40px; 
+}
