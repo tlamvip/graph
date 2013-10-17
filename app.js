@@ -22,6 +22,10 @@ function itemTableCtrl($scope) {
 		});                                 
 	};
 
+    $scope.remove = function(index) {
+        $scope.items.splice(index, 1);
+    },
+
 	$scope.maxValue = function(item){
 		if (item.value > 100){ 
 			item.value = 100;

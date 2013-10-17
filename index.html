@@ -19,11 +19,14 @@
 					<input ng-model="item.title">
 				</td> 
 				<td>
-					<input ng-model="item.value" ng-change="maxValue(item)"> %
+					<input type="number" class="small" ng-model="item.value" ng-change="maxValue(item)">
 				</td>
+                <td>
+                    <a class="remove" href ng-click="remove($index)">remove</a>
+                </td>
 			</tr>        
 		</table> 
-        <button ng-click="add()">Add new</button>
+        <input type="button" value="Add new" ng-click="add()">
     </div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>

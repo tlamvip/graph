@@ -11,3 +11,25 @@
 	text-align: center;
 	width: 40px; 
 }
+input.small{
+    width: 30px;
+}
+input[type="button"]{
+    background: #00BCF2;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin-top: 10px;
+}
+input[type="button"]:hover{
+    background: #00A2D8;
+}
+
+.remove{
+    color: red;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    margin-left: 5px;
+}
