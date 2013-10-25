@@ -1,4 +1,8 @@
-function fruitCtrl($scope) {  
+'use strict';
+
+var graphApp = angular.module('graphApp', []);
+
+graphApp.controller('fruitCtrl', function ($scope) {
 	$scope.items = [
 		{
 			title : "Apple",
@@ -13,9 +17,9 @@ function fruitCtrl($scope) {
 			value : 32
 		},
 	];
-}
-  
-function itemTableCtrl($scope) {                                 
+});
+
+graphApp.controller('itemTableCtrl', function ($scope) {
 	$scope.add = function(){          
 		$scope.items.push({
 			value : 0
@@ -33,5 +37,4 @@ function itemTableCtrl($scope) {
 			item.value = 0
 		}
 	};
-}      
-    
+});
